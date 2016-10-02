@@ -24,6 +24,8 @@ public class WebCrawlerFactory {
 		}else if(WebCrawlerType.EXTERNAL.compareTo(type) == 0){
 			throw new RuntimeException("Not yet Implemented");
 			
+		}else if (WebCrawlerType.INTERNAL_NON_RECURSSIVE.compareTo(type) == 0){
+			webCrawler = new NonRecurssiveInternalSiteWebCrawler(url);
 		}
 		
 		return webCrawler;

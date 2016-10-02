@@ -9,6 +9,7 @@ package com.wipro.service;
 public enum WebCrawlerType {
 	
 	INTERNAL,
-	EXTERNAL
+	EXTERNAL,
+	INTERNAL_NON_RECURSSIVE
 
 }
